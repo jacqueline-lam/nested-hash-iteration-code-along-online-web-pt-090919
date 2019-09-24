@@ -20,7 +20,11 @@ def remove_strawberry(contacts)
     if person == "Freddy Mercury" 
       # 2. Iterate over secone level
       contact_details_hash.each do |attribute, data|
-      binding.pry
+        # 3. Locate element we're looking for:
+        if attribute == :favorite_ice_cream_flavors
+            
+          binding.pry
+        end  
       end
     end
   end
