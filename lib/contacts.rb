@@ -15,11 +15,13 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-  # iterate over first level
+  # 1. iterate over first level
   contacts.each do |person, contact_details_hash|
     if person == "Freddy Mercury" 
+      # 2. Iterate over secone level
       contact_details_hash.each do |attribute, data|
       binding.pry
+      end
     end
   end
 end
